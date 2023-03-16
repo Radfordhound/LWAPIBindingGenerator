@@ -64,7 +64,7 @@ int main(int argc, char* argv[])
 #endif
 
     fputs(".MODEL FLAT\n\n", outputFile);
-    fputs("include \"LWAPI.inc\"\n\n", outputFile);
+    fputs("include LWAPI.inc\n\n", outputFile);
 
     CXIndex idx = clang_createIndex(true, true);
 
