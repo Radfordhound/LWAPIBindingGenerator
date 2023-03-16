@@ -15,7 +15,7 @@ find_path(LIBCLANG_STATIC_INCLUDE_DIR "clang-c/Index.h" REQUIRED)
 # Setup executable
 set(SOURCE_DIR "src")
 add_executable(LWAPIBindingGenerator
-    "${SOURCE_DIR}/LWAPIBindingGenerator.cpp"
+    "${SOURCE_DIR}/LWAPIBindingGenerator.c"
     "${SOURCE_DIR}/pch.h"
 )
 

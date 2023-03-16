@@ -9,9 +9,8 @@
 // Standard library
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdexcept>
-#include <memory>
-#include <string>
+#include <stdbool.h>
+#include <string.h>
 
 // libClang
 #include <clang-c/Index.h>
