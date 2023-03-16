@@ -12,8 +12,6 @@ LWAPIBindingGenerator foo.h foo.asm
 
 First, download and build [https://github.com/deech/libclang-static-build](libclang-static):
 
-**NOTE:** As of this time, you **MUST** have Visual Studio 2019 installed for this to work! If you attempt to use a different version (even a newer version, like vs2022) you will run into errors when building and/or linking.
-
 ```
 mkdir depends && cd depends
 git clone https://github.com/deech/libclang-static-build.git
