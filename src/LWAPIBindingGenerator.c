@@ -32,7 +32,7 @@ static enum CXChildVisitResult visitor(
                 // If there are multiple mangled names, generate a binding for each one.
                 for (unsigned int i = 0; i < mangledNames->Count; ++i)
                 {
-                    fprintf(outputFile, "BINDING %08xh, __imp_%s\n", addr,
+                    fprintf(outputFile, "BINDING %08xh, %s\n", addr,
                         clang_getCString(mangledNames->Strings[i]));
                 }
             }
@@ -45,7 +45,7 @@ static enum CXChildVisitResult visitor(
                 const char* const mangledName = clang_getCString(
                     clang_Cursor_getMangling(parent));
 
-                fprintf(outputFile, "BINDING %08xh, __imp_%s\n", addr, mangledName);
+                fprintf(outputFile, "BINDING %08xh, %s\n", addr, mangledName);
             }
         }
 
